@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <meta charset="UTF-8">
+  <script>
+    // 🗓️ Expiry set to July 15, 2025 at 11:59:59 PM
+    const expiryDate = new Date(2025, 6, 15, 23, 59, 59).getTime();
+    const now = new Date().getTime();
+
+    if (now < expiryDate) {
+      // ✅ Redirect if current date is before expiry
+      window.location.href = "https://api-shein.shein.com/ugrowth/game/cashgift/?type=immersive&navigation_transparent=false&navigation=true&page_from=cashreward&app=shein&device_type=android&language=en&site_uid=andshph&region=PH"; // ← Replace this with your actual link
+    } else {
+      // ❌ After expiry
+      document.write("⚠️ This link has expired and is no longer available.");
+    }
+  </script>
+</head>
+<body>
+  <noscript>Please enable JavaScript to view this page.</noscript>
+</body>
+</html>
